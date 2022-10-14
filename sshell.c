@@ -299,7 +299,7 @@ void my_pushd(char *arg)
     if (a == -1)
     {
         fprintf(stderr, "Error: no such directory\n");
-        printf("+ completed 'pushd %s' [1]\n", arg);
+        fprintf(stderr, "+ completed 'pushd %s' [1]\n", arg);
     }
     else if (a == 0)
     {
@@ -315,7 +315,7 @@ void my_pushd(char *arg)
             ptr->next = head;
             head = ptr;
         }
-        printf("+ completed 'pushd %s' [0]\n", arg);
+        fprintf(stderr, "+ completed 'pushd %s' [0]\n", arg);
     }
 }
 
@@ -336,13 +336,13 @@ void my_popd(void)
     if (head->next == NULL)
     {
         fprintf(stderr, "Error: directory stack empty\n");
-        printf("+ completed 'popd' [1]\n");
+        fprintf(stderr, "+ completed 'popd' [1]\n");
     }
     else
     {
         head = head->next;
         chdir("..");
-        printf("+ completed 'popd' [0]\n");
+        fprintf(stderr, "+ completed 'popd' [0]\n");
     }
 }
 
