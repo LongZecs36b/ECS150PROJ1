@@ -343,7 +343,7 @@ void my_popd(void)
     {
         head = head->next;
         chdir("..");
-        printf("%s\n", getcwd(NULL, 0));
+        // printf("%s\n", getcwd(NULL, 0));
         fprintf(stderr, "+ completed 'popd' [0]\n");
     }
 }
