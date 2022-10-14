@@ -255,11 +255,11 @@ void my_cd(char *arg)
     if (a == -1)
     {
         fprintf(stderr, "Error: cannot cd into directory\n");
-        printf("+ completed 'cd %s' [1]\n", arg);
+        fprintf(stderr, "+ completed 'cd %s' [1]\n", arg);
     }
     else if (a == 0)
     {
-        printf("+ completed 'cd %s' [0]\n", arg);
+        fprintf(stderr, "+ completed 'cd %s' [0]\n", arg);
     }
 }
 
