@@ -382,7 +382,7 @@ void my_dirs(void)
         printf("%s\n", getcwd(NULL, 0));
     }
 
-    printf("+ completed 'dirs' [0]\n");
+    fprintf(stderr, "+ completed 'dirs' [0]\n");
 }
 
 int main(void)
