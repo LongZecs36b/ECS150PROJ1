@@ -746,12 +746,12 @@ int main(void)
             *nl = '\0';
         }
 
-        printf("+ completed '%s' ", saved_cmdargs);
+        fprintf(stderr, "+ completed '%s' ", saved_cmdargs);
         for (int i = 0; i < counter; i++)
         {
-            printf("[%d]", (status[i] / 256));
+            fprintf(stderr, "[%d]", (status[i] / 256));
         }
-        printf("\n");
+        fprintf(stderr, "\n");
 
             //printf("d = %d\n", (int)strchr(cmdargs, '|'));
     }
