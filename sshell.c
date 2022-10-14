@@ -278,7 +278,7 @@ bool is_pwd(char *cmd)
 void my_pwd(void)
 {
     printf("%s\n", getcwd(NULL, 0));
-    printf("+ completed 'pwd' [0]\n");
+    fprintf(stderr, "+ completed 'pwd' [0]\n");
 }
 
 bool is_pushd(char *cmd)
