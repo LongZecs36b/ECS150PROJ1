@@ -228,7 +228,7 @@ bool is_exit(char *cmd)
     if (!strcmp(cmd, "exit"))
     {
         fprintf(stderr, "Bye...\n");
-        printf("+ completed 'exit' [0]\n");
+        fprintf(stderr, "+ completed 'exit' [0]\n");
         return true;
     }
     else
