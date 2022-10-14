@@ -315,7 +315,7 @@ void my_pushd(char *arg)
             ptr->next = head;
             head = ptr;
         }
-        printf("%s\n", getcwd(NULL, 0));
+        // printf("%s\n", getcwd(NULL, 0));
         fprintf(stderr, "+ completed 'pushd %s' [0]\n", arg);
     }
 }
